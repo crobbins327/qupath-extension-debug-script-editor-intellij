@@ -1,0 +1,9 @@
+module qupath.extension.debugscripteditor {
+	
+	requires java.desktop;
+	
+	requires slf4j.api;
+	requires qupath.gui.fx;
+	requires qupath.gui.fx.scripting
+
+}
