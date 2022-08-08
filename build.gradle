@@ -5,10 +5,11 @@ plugins {
   id 'org.openjfx.javafxplugin' version '0.0.13'
   // To create a shadow/fat jar, including dependencies
   id 'maven-publish'
+  id 'groovy'
 }
 
 task wrapper(type: Wrapper){
-  gradleVersion = '7.2'
+  gradleVersion = '7.5'
 }
 
 task prepareKotlinBuildScriptModel {
@@ -41,11 +42,16 @@ javafx {
 }
 
 configurations {
-  api.extendsFrom javafx
-  api.extendsFrom controlsfx
+//  api.extendsFrom javafx
+//  api.extendsFrom controlsfx
   implementation.extendsFrom guava
   implementation.extendsFrom jfxtras
   implementation.extendsFrom commonstext
   implementation.extendsFrom commonsmath
   implementation.extendsFrom groovy
+}
+
+dependencies{
+  implementation 'org.codehaus.groovy:groovy-all:2.4.4'
+  implementation 'org.apache.commons:commons-text:1.9'
 }

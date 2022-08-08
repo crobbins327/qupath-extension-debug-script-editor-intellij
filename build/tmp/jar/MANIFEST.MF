@@ -1,6 +1,2 @@
 Manifest-Version: 1.0
-Implementation-Vendor: QuPath developers
-Implementation-Version: 0.4.0-SNAPSHOT
-Automatic-Module-Name: io.github.qupath.extension.debugscripteditor
-QuPath-build-time: 2022-08-04, 23:32
 
